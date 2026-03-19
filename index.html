@@ -2,20 +2,255 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=index.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RS Nexus Technologies</title>
     <link rel="stylesheet" href="rsnexus.css">
 </head>
 <body>
-    <main class="section">
+
+    <!-- HEADER -->
+    <header class="site-header">
         <div class="container">
-            <div class="info-card" style="max-width: 720px; margin: 60px auto; text-align: center;">
-                <h1>RS Nexus Technologies</h1>
-                <p class="section-text">This page has moved to the new multi-page website.</p>
-                <p><a class="button button-primary" href="index.html">Open Home Page</a></p>
+            <div class="header-inner">
+                <a class="brand" href="index.html">
+                    <div class="brand-copy">
+                        <strong>RS Nexus</strong>
+                        <span>Technologies</span>
+                    </div>
+                </a>
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="site-nav">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#contact" class="nav-cta">Get Started</a>
+                </nav>
             </div>
         </div>
-    </main>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="media-bg">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80" alt="">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-gridline"></div>
+        <div class="hero-code-rain" aria-hidden="true">
+            <span>const future = await rsnexus.build();</span>
+            <span>import { innovation } from '@rsnexus/core';</span>
+            <span>deploy --env production --scale auto</span>
+            <span>git push origin main // shipped</span>
+            <span>npm run transform:business</span>
+            <span>SELECT * FROM solutions WHERE impact = 'high';</span>
+        </div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Technology Partner</p>
+                    <h1>Build Smarter. Scale Faster.</h1>
+                    <p class="lead">RS Nexus Technologies delivers cutting-edge software solutions, digital transformation, and IT consulting to help businesses thrive in the modern world.</p>
+                    <div class="hero-meta">
+                        <span>Web Development</span>
+                        <span>Cloud Solutions</span>
+                        <span>IT Consulting</span>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#services" class="button button-primary">Explore Services</a>
+                        <a href="#contact" class="button button-secondary">Talk to Us</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-visual-card">
+                        <div class="code-screen">
+                            <div class="code-line accent"></div>
+                            <div class="code-line long"></div>
+                            <div class="code-line medium"></div>
+                            <div class="code-line short"></div>
+                            <div class="code-line soft"></div>
+                            <div class="code-line long"></div>
+                            <div class="code-line medium"></div>
+                            <div class="code-line accent"></div>
+                            <div class="code-line short"></div>
+                            <div class="code-line long"></div>
+                        </div>
+                    </div>
+                    <div class="hero-outline"></div>
+                    <div class="floating-note">
+                        <span>Live Deployment</span>
+                        <p>Your project, shipped on time and built to last.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div>
+                    <strong><span data-counter="120" data-suffix="+">0+</span></strong>
+                    <span>Projects Delivered</span>
+                </div>
+                <div>
+                    <strong><span data-counter="98" data-suffix="%">0%</span></strong>
+                    <span>Client Satisfaction</span>
+                </div>
+                <div>
+                    <strong><span data-counter="5" data-suffix="+ yrs">0+ yrs</span></strong>
+                    <span>Industry Experience</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="eyebrow">What We Do</p>
+                <h2>Our Services</h2>
+                <p class="section-text">From concept to deployment, we cover the full technology stack your business needs.</p>
+            </div>
+            <div class="service-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">W</div>
+                    <h3>Web Development</h3>
+                    <p class="section-text">Modern, responsive websites and web applications built with the latest technologies.</p>
+                    <ul class="feature-list">
+                        <li>Custom website design</li>
+                        <li>E-commerce solutions</li>
+                        <li>Progressive web apps</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">C</div>
+                    <h3>Cloud Solutions</h3>
+                    <p class="section-text">Scalable cloud infrastructure and migration services to modernize your operations.</p>
+                    <ul class="feature-list">
+                        <li>Cloud migration</li>
+                        <li>Infrastructure setup</li>
+                        <li>DevOps & CI/CD</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">IT</div>
+                    <h3>IT Consulting</h3>
+                    <p class="section-text">Strategic technology guidance to align your IT investments with business goals.</p>
+                    <ul class="feature-list">
+                        <li>Technology audits</li>
+                        <li>Digital transformation</li>
+                        <li>Security assessments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section dark-section" id="about">
+        <div class="container">
+            <div class="split-grid">
+                <div class="reveal">
+                    <p class="eyebrow">About Us</p>
+                    <h2>Driven by Innovation</h2>
+                    <p class="section-text">RS Nexus Technologies is a forward-thinking tech company committed to delivering high-quality digital solutions. We partner with businesses of all sizes to solve complex problems through technology.</p>
+                    <p class="section-text">Our team brings deep expertise across software engineering, cloud architecture, and digital strategy — always focused on results that matter.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="button button-primary">Work With Us</a>
+                    </div>
+                </div>
+                <div class="image-panel reveal">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="RS Nexus team collaborating">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-copy reveal">
+                    <p class="eyebrow">Get In Touch</p>
+                    <h2>Let's Build Something Together</h2>
+                    <p class="section-text">Have a project in mind or just want to explore what's possible? Reach out and we'll get back to you promptly.</p>
+                    <div class="contact-list">
+                        <p>📧 info@rsnexus.tech</p>
+                        <p>📞 +256 700 000 000</p>
+                        <p>📍 Kampala, Uganda</p>
+                    </div>
+                </div>
+                <div class="contact-form-card reveal">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-row">
+                            <label>
+                                <span>First Name</span>
+                                <input type="text" name="first_name" placeholder="John" required>
+                            </label>
+                            <label>
+                                <span>Last Name</span>
+                                <input type="text" name="last_name" placeholder="Doe" required>
+                            </label>
+                        </div>
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email" placeholder="you@example.com" required>
+                        </label>
+                        <label>
+                            <span>Message</span>
+                            <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        </label>
+                        <button type="submit" class="button button-submit">Send Message</button>
+                        <p class="form-status" id="formStatus" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-panel reveal">
+                <div>
+                    <p class="eyebrow">Ready to start?</p>
+                    <h2>Your next project starts here.</h2>
+                </div>
+                <a href="#contact" class="button button-light">Get a Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="brand">
+                        <div class="brand-copy">
+                            <strong>RS Nexus</strong>
+                            <span>Technologies</span>
+                        </div>
+                    </div>
+                    <p>Building the digital future, one solution at a time.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <a href="#services">Services</a><br>
+                    <a href="#about">About</a><br>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p>info@rsnexus.tech</p>
+                    <p>Kampala, Uganda</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RS Nexus Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="rsnexus.js"></script>
 </body>
 </html>
